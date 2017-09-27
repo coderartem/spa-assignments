@@ -5,15 +5,31 @@
     border:1px solid #161414;
 }
 
-#reset {
-    margin: 10px;
-}
 
 .headComp {
     flex: 1 0px;
     justify-content: space-around;
 }
 
-.headLeft{
+#total{
     flex:2 0px;
+    display: flex;
+    justify-content: center;
 }
+
+.main {
+    display: block; /*none*/ 
+}
+
+.loginPage {
+
+    height: 100vh;
+    display: none; /*flex*/
+    justify-content: center;
+    align-items: center;
+}
+
+#sbmt {
+    margin-right: 40px;
+}
+

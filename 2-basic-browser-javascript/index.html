@@ -4,21 +4,46 @@
     <meta charset="utf-8">
     <title>the holy grail</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.from.1.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./main.js"></script>
   </head>
   <body>
     <div class="app">
       <div class="header">
-        Total: 0
+        <div class="headComp headLeft">
+        </div>
+       <div id="total" class="headComp"> Total: 0</div>
+        <button id="reset" class="headComp">
+            RESET
+        </button>
       </div>
       <div class="body">
-        <div class="left"></div>
+        <div class="left">
+          <div class="lable">
+              &nbspCost: 10.00 points&nbsp
+          </div>
+          <div id="btnLft" class="button">
+            *1.2
+          </div>
+        </div>
         <div class="center">
-          <div class="button">
+          <div id="btnCntr" class="button">
             +1
           </div>
         </div>
-        <div class="right"></div>
+        <div class="right">
+            <div class="lable">
+                &nbspCost: 100.00 points&nbsp
+            </div>
+          <div id="btnRght" class="button">
+            +1 auto
+          </div>
+          <div>
+          <div id="counter" class="lable">
+          </div>
+        </div>
+        </div>
       </div>
       <div class="footer">
         Made w/ &lt;3 @ FastTrack'D

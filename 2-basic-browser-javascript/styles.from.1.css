@@ -1,0 +1,60 @@
+body {
+    margin: 0px;
+}
+
+.center, .button, .footer, .header, .left, .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app{
+    color: rgba(0, 0, 0, 0.87);
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.header {
+    flex: 1 0px;
+    font-size: large;
+    background: LIGHTPINK;
+}
+
+.body{
+    flex: 13 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.left{
+    flex-direction: column;
+    background: RED;
+    flex: 1 0px;
+}
+
+.center{
+    flex-direction: column;
+    background: GREEN;
+    width: 960px;
+}
+
+.right{
+    flex-direction: column;
+    background: BLUE;
+    flex: 1 0px;
+}
+
+.button{
+    font-size: medium;
+    background: WHITE;
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+}
+
+.footer{
+    flex: 1 0px;
+    font-size: small;
+    background: GREY;
+}

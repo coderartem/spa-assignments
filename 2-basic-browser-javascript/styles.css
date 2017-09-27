@@ -1,0 +1,19 @@
+.lable {
+    margin: 5% 0;
+    background: rgb(208, 197, 0);
+    border-radius: 10%;
+    border:1px solid #161414;
+}
+
+#reset {
+    margin: 10px;
+}
+
+.headComp {
+    flex: 1 0px;
+    justify-content: space-around;
+}
+
+.headLeft{
+    flex:2 0px;
+}

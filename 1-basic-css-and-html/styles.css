@@ -16,20 +16,28 @@ body {
 }
 
 .header {
-    flex-grow: 1;
+    /*height:6.67%; original way*/
+
+    /*we can use flex: instead of flex-grow:*/
+    /*flex-grow:1;*/
+    flex: 1 0px;
+     /*problemy (tipa esli udalish element) s flex, esli ne ukazal basis, po default basis = razmeram elemntov vnutri, 
+    i vse delenie mesta mezhdu flex dobavlyaetsya k basis. esli udalyaesh element iznutri, eto original dobavlenie ischezaet, budut nepravilnye
+    proporcii mezhdu flex. nado iznachalno stavit basis 0*/
     font-size: large;
-    background: lightpink;
+    background: LIGHTPINK;
 }
 
 .body{
-    flex-grow: 13;
+    flex: 13 0px;
     display: flex;
     flex-direction: row;
+    /*height:86.66%;*/
 }
 
 .left{
     background: RED;
-    flex-grow: 1;
+    flex: 1 0px;
 }
 
 .center{
@@ -39,19 +47,20 @@ body {
 
 .right{
     background: BLUE;
-    flex-grow: 1;
+    flex: 1 0px;
 }
 
 .button{
     font-size: medium;
-    background: white;
+    background: WHITE;
     width: 150px;
     height: 150px;
     border-radius: 150px;
 }
 
 .footer{
-    flex-grow: 1;
+    flex: 1 0px;
+    /*height:6.67%;*/
     font-size: small;
     background: GREY;
 }
